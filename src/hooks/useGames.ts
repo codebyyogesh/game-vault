@@ -13,6 +13,7 @@ export interface GameResults{
     name: string
     background_image : string
     platforms : Array<{platform:Platform}>
+    metacritic : number
 }
 
 interface FetchGamesResponse{
