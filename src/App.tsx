@@ -11,12 +11,13 @@ function App() {
           base: `"navbar" "main"`, // for mobile devices
           md: `"navbar navbar" "leftside main"`, // for desktop
         }}
+        templateColumns={{ base: "1fr", md: "200px 1fr" }}
       >
         <GridItem pl="2" area={"navbar"}>
           <NavBar />
         </GridItem>
         <Show above="md">
-          <GridItem pl="2" area={"leftside"}>
+          <GridItem pl="2" area={"leftside"} paddingX={5}>
             <GenreList />
           </GridItem>
         </Show>
